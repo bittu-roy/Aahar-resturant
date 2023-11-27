@@ -542,85 +542,82 @@ section{
    font-size: 2rem;
 }
 
-.blogs{
-   background: var(--light-bg);
+/* feedback from begins*/
+
+
+.feedback{
+   background: var(--peru);
 }
 
-.blogs .slide .image{
-   height: 25rem;
-   overflow: hidden;
-   position: relative;
-}
-
-.blogs .slide .image img{
-   height: 100%;
-   width: 100%;
-   object-fit: cover;
-}
-
-.blogs .slide .image span{
-   position: absolute;
-   bottom: -10rem; left:50%;
-   transform: translateX(-50%);
-   padding:.5rem 1.5rem;
-   font-size: 2rem;
+.feedback .heading span{
    color:var(--white);
-   background: var(--black);
-   z-index: 10;
 }
 
-.blogs .slide:hover .image span{
-   bottom: 1rem;
+.feedback .heading h3{
+   color:var(--white);
 }
 
-.blogs .slide:hover .image img{
-   transform: scale(1.1);
-}
-
-.blogs .slide .content{
+.feedback form{
    padding:2rem;
    background: var(--white);
    box-shadow: var(--box-shadow);
-   border:var(--border);
-   margin-bottom: 4rem;
 }
 
-.blogs .slide .content .icon{
+.feedback form .box-container{
    display: flex;
-   align-items: center;
-   justify-content: space-between;
-   margin-bottom: 2rem;
+   flex-wrap: wrap;
+   gap:2rem;
 }
 
-.blogs .slide .content .icon a{
-   font-size: 1.5rem;
+.feedback form .box-container .box{
+   flex:1 1 41rem;
+}
+
+.feedback form .box-container .box .inputBox input,
+.feedback form .box-container .box .inputBox textarea{
+   width: 100%;
+   margin:1rem 0;
+   padding:1.2rem 1.4rem;
+   font-size: 1.7rem;
    color:var(--light-black);
+   border:var(--border);
+   text-transform: none;
 }
 
-.blogs .slide .content .icon a i{
-   padding-right: .7rem;
-   color:var(--peru);
+.feedback form .box-container .box .inputBox input::placeholder,
+.feedback form .box-container .box .inputBox textarea::placeholder{
+   text-transform: capitalize;
 }
 
-.blogs .slide .content .icon a:hover{
-   color:var(--peru);
+.feedback form .box-container .box .inputBox input:focus,
+.feedback form .box-container .box .inputBox textarea:focus{
+   background: var(--black);
+   color:var(--white);
 }
 
-.blogs .slide .content .title{
-   font-size: 2.5rem;
-   color:var(--black);
+.feedback form .box-container .box .inputBox input:focus::placeholder,
+.feedback form .box-container .box .inputBox textarea:focus::placeholder{
+   color:var(--light-white);
 }
 
-.blogs .slide .content .title:hover{
-   text-decoration: underline;
+.feedback form .box-container .box .inputBox textarea{
+   height: 20rem;
+   resize: none;
 }
 
-.blogs .slide .content p{
-   padding:1rem 0;
-   line-height: 2;
-   font-size: 1.6rem;
+.feedback form .box-container .box .inputBox .map{
+   height: 20rem;
+   width: 100%;
+   margin:1rem 0;
+}
+
+.feedback form .box-container .box .inputBox span{
    color:var(--light-black);
+   font-size: 2rem;
 }
+
+
+/* feedback from ends*/
 
 .footer{
    text-align: center;
